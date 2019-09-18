@@ -1,0 +1,271 @@
+﻿[
+  {
+    "ImageName": "Corps_Credicor",
+    "CorpName": "Credicor",
+    "Tag": null,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 57
+      }
+    ],
+    "StartResourceProduct": null,
+    "CorpEffectName": "CredictorEffect"
+  },
+
+  {
+    "ImageName": "Corps_EcoLine",
+    "CorpName": "EcoLine",
+    "Tag": 
+      {
+        "TagName": "Plant",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 36
+      },
+      {
+        "ResourceName": "Plant",
+        "ResourceAmount": 3
+      }
+    ],
+    "StartResourceProduct": [
+      {
+        "ResourceName": "Plant",
+        "ResourceAmount": 2
+      }
+    ],
+    "CorpEffectName": null
+  },
+  {
+    "ImageName": "Corps_Helion",
+    "CorpName": "Helion",
+    "Tag": 
+      {
+        "TagName": "Space",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 42
+      }
+    ],
+    "StartResourceProduct": [
+      {
+        "ResourceName": "Heat",
+        "ResourceAmount": 3
+      }
+    ],
+    "CorpEffectName": "HelionEffect"
+  },
+  {
+    "ImageName": "Corps_InterplanetaryCinematics",
+    "CorpName": "InterplanetaryCinematics",
+    "Tag": 
+      {
+        "TagName": "Building",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 30
+      },
+      {
+        "ResourceName": "Iron",
+        "ResourceAmount": 20
+      }
+    ],
+    "StartResourceProduct": null,
+    "CorpEffectName": "InterplanetaryCinematicsEffect"
+  },
+  {
+    "ImageName": "Corps_Inventrix",
+    "CorpName": "Inventrix",
+    "Tag": 
+      {
+        "TagName": "Science",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 45
+      }
+    ],
+    "StartResourceProduct": null,
+    "CorpEffectName": "InventrixEffect"
+  },
+
+  {
+    "ImageName": "Corps_MiningGuild",
+    "CorpName": "MiningGuild",
+    "Tag": 
+      {
+        "TagName": "Building",
+        "TagCount": 2
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 30
+      },
+      {
+        "ResourceName": "Iron",
+        "ResourceAmount": 5
+      }
+    ],
+    "StartResourceProduct": [
+      {
+        "ResourceName": "Iron",
+        "ResourceAmount": 1
+      }
+    ],
+    "CorpEffectName": "MinigGuildEffect"
+  },
+
+  {
+    "ImageName": "Corps_PhoboLog",
+    "CorpName": "PhoboLog",
+    "Tag": 
+      {
+        "TagName": "Space",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 23
+      },
+      {
+        "ResourceName": "Titanium",
+        "ResourceAmount": 10
+      }
+    ],
+    "StartResourceProduct": null,
+    "CorpEffectName": null
+  },
+
+  {
+    "ImageName": "Corps_SaturnSystems",
+    "CorpName": "SaturnSystems",
+    "Tag": 
+      {
+        "TagName": "Jupiter",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 42
+      }
+    ],
+    "StartResourceProduct": [
+      {
+        "ResourceName": "Titanium",
+        "ResourceAmount": 1
+      }
+    ],
+    "CorpEffectName": "SaturnSystemsEffect"
+  },
+
+  //{
+  // "ImageName": "Corps_StarterCorp",
+  //  "CorpName": "StarterCorperation",
+  //  "Tag": null,
+  //  "StartResource": [
+  //    {
+  //      "ResourceName": "MC",
+  //      "ResourceAmount": 42
+  //    }
+  // ],
+  //  "StartResourceProduct": null,
+  //  "CorpEffectName": null
+  //},
+
+  {
+    "ImageName": "Corps_Teractor",
+    "CorpName": "Teractor",
+    "Tag": 
+      {
+        "TagName": "Earth",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 60
+      }
+    ],
+    "StartResourceProduct": null,
+    "CorpEffectName": "TeractorEffect"
+  },
+
+  {
+    "ImageName": "Corps_TharsisRepublic",
+    "CorpName": "TharsisRepublic",
+    "Tag": 
+      {
+        "TagName": "Building",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 40
+      }
+    ],
+    "StartResourceProduct": null,
+    "CorpEffectName": "TharsisRepublicEffect"
+  },
+
+  {
+    "ImageName": "Corps_ThorGate",
+    "CorpName": "ThorGate",
+    "Tag": 
+      {
+        "TagName": "Energy",
+        "TagCount": 1
+      }
+    ,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 48
+      }
+    ],
+    "StartResourceProduct": [
+      {
+        "ResourceName": "Energy",
+        "ResourceAmount": 1
+      }
+    ],
+    "CorpEffectName": "ThorGateEffect"
+  },
+
+  {
+    "ImageName": "Corps_UNMI",
+    "CorpName": "UNMI",
+    "Tag": null,
+    "StartResource": [
+      {
+        "ResourceName": "MC",
+        "ResourceAmount": 40
+      }
+    ],
+    "StartResourceProduct": null,
+    "CorpEffectName": "UNMIEffect"
+  }
+]

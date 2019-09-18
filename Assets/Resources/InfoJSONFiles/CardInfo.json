@@ -1,0 +1,6103 @@
+﻿[
+  {
+    //지구 사무실
+    "name": "Card_Active_001",
+    "cost": 1,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "funcArgsInd": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "activeFuncInd": null,
+    "sustainableEffectName": "TagChangeCost",
+    "sustainableEffectArgs": [
+      {
+        "arg": "Earth"
+      },
+      {
+        "arg": -3
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1
+  },
+  {
+    //지하 핵폭발
+    "name": "Card_Active_002",
+    "cost": 6,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "funcArgsInd": null,
+    "activeFuncName": [
+      {
+        "funcname": "DiffSource"
+      },
+      {
+        "funcname": "DiffSourceProduct"
+      }
+    ],
+    "activeFuncArgs": [
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": -10
+      },
+      {
+        "arg": "Heat"
+      },
+      {
+        "arg": 2
+      }
+    ],
+    "activeFuncInd": [
+      {
+        "ind": 1
+      },
+      {
+        "ind": 3
+      }
+    ],
+    "sustainableEffectName": null,
+    "sustainableEffectArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1
+  },
+  {
+    //초식 동물
+    "name": "Card_Active_003",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 8
+      }
+    ],
+    "funcName": [
+      {
+        "funcname": "IncreaseToken"
+      },
+      {
+        "funcname": "TargetDiffSourceProduct"
+      }
+    ],
+    "funcArgs": [
+      {
+        "arg": "Card_Active_003"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "Plant"
+      },
+      {
+        "arg": -1
+      }
+    ],
+    "funcArgsInd": [
+      {
+        "ind": 0
+      },
+      {
+        "ind": 2
+      }
+    ],
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "activeFuncInd": null,
+    "sustainableEffectName": "TileToToken",
+    "sustainableEffectArgs": [
+      {
+        "arg": "Forest"
+      },
+      {
+        "arg": true
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 2
+  },
+  {
+    //포식자들
+    "name": "Card_Active_004",
+    "cost": 14,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 11
+      }
+    ],
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTDecreaseTokenAddToken",
+    "activeFuncArgs": [
+      {
+        "arg": "Animal"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": "Animal",
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //지구 사출기
+    "name": "Card_Active_005",
+    "cost": 23,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "TagDecreaseCost",
+    "activeFuncArgs": [
+      {
+        "arg": null
+      },
+      {
+        "arg": -2
+      }
+    ],
+    "score": 2,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //질량 변환기
+    "name": "Card_Active_006",
+    "cost": 8,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 5
+      }
+    ],
+    "funcName": "IncreaseProduct",
+    "funcArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 6
+      }
+    ],
+    "activeFuncName": "TagDecreaseCost",
+    "activeFuncArgs": [
+      {
+        "arg": "Space"
+      },
+      {
+        "arg": -2
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //최적의 대기권 감속
+    "name": "Card_Active_007",
+    "cost": 7,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "TagGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Space"
+      },
+      {
+        "arg": "Event"
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 3
+      },
+      {
+        "arg": "Heat"
+      },
+      {
+        "arg": 3
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //표준화 기술
+    "name": "Card_Active_008",
+    "cost": 6,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "TagGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Standard"
+      },
+      {
+        "arg": null
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 3
+      },
+      {
+        "arg": null
+      },
+      {
+        "arg": null
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //적도 자기화
+    "name": "Card_Active_009",
+    "cost": 11,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTDecreaseProductIncreaseTFLevel",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": -1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //전기 사출기
+    "name": "Card_Active_010",
+    "cost": 17,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MOxygen",
+        "requirecount": 8
+      }
+    ],
+    "funcName": "DecreaseProduct",
+    "funcArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": -1
+      }
+    ],
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Plant"
+      },
+      {
+        "arg": -1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 7
+      }
+    ],
+    "score": 1,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "select"
+  },
+  {
+    //제철소
+    "name": "Card_Active_011",
+    "cost": 11,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSourceWithOxygen",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": -4
+      },
+      {
+        "arg": "Iron"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //조류
+    "name": "Card_Active_012",
+    "cost": 10,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 13
+      }
+    ],
+    "funcName": "SelectPlayerAddProduct",
+    "funcArgs": [
+      {
+        "arg": "Plant"
+      },
+      {
+        "arg": -2
+      }
+    ],
+    "activeFuncName": "ACTAddToken",
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": "Animal",
+    "scoreRatio": 1,
+    "isTargeting": "player"
+  },
+  {
+    //적응기술
+    "name": "Card_Active_013",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "LimitDown",
+    "activeFuncArgs": null,
+    "score": 1,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": null
+  },
+  {
+    //적응기술
+    "name": "Card_Active_013",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //전력 기반시설
+    "name": "Card_Active_014",
+    "cost": 4,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //제한 구역
+    "name": "Card_Active_015",
+    "cost": 11,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //중심 인공지능
+    "name": "Card_Active_016",
+    "cost": 21,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //왕복선
+    "name": "Card_Active_017",
+    "cost": 10,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 5
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //우주 엘레베이터
+    "name": "Card_Active_018",
+    "cost": 27,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //유로파로부터의 물 공급
+    "name": "Card_Active_019",
+    "cost": 25,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //이민 도시
+    "name": "Card_Active_020",
+    "cost": 13,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //우주 거울
+    "name": "Card_Active_021",
+    "cost": 3,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": "ACTPaySourceGetSource",
+    "activeFuncArgs": [
+      {
+        "arg": "Energy"
+      },
+      {
+        "arg": 1
+      },
+      {
+        "arg": "MC"
+      },
+      {
+        "arg": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //우주 정거장
+    "name": "Card_Active_022",
+    "cost": 10,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //이동용 로버 제작
+    "name": "Card_Active_023",
+    "cost": 8,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //작은 동물들
+    "name": "Card_Active_024",
+    "cost": 6,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 6
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //생태 구역
+    "name": "Card_Active_025",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "TreeTile",
+        "requirecount": 1
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //아질산염 분해 박테리아
+    "name": "Card_Active_026",
+    "cost": 11,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //연구 전초기지
+    "name": "Card_Active_027",
+    "cost": 18,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "City",
+        "tagcount": "1"
+      },
+      {
+        "tagname": "Building",
+        "tagcount": "1"
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //올림푸스 회의
+    "name": "Card_Active_028",
+    "cost": 10,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //서식지 보호
+    "name": "Card_Active_029",
+    "cost": 5,
+    "category": "Active",
+    "tags": null,
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //양자 추출기
+    "name": "Card_Active_030",
+    "cost": 13,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //온실가스 생성 박테리아
+    "name": "Card_Active_031",
+    "cost": 8,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //완보동물
+    "name": "Card_Active_032",
+    "cost": 4,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //반중력 기술
+    "name": "Card_Active_033",
+    "cost": 14,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 7
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //보안 함대
+    "name": "Card_Active_034",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //분해자들
+    "name": "Card_Active_035",
+    "cost": 5,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //산업 중심지
+    "name": "Card_Active_036",
+    "cost": 4,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //발명가 연합
+    "name": "Card_Active_037",
+    "cost": 9,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //북극 해조류
+    "name": "Card_Active_038",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MCelciusDegree",
+        "requirecount": -12
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //사업 네트워크
+    "name": "Card_Active_039",
+    "cost": 4,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //생명체 탐사
+    "name": "Card_Active_040",
+    "cost": 3,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MOxygen",
+        "requirecount": 6
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //극저온 곰팡이
+    "name": "Card_Active_041",
+    "cost": 13,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MCelciusDegree",
+        "requirecount": -10
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //물 분해 공장
+    "name": "Card_Active_042",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //물리학 단지
+    "name": "Card_Active_043",
+    "cost": 12,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //바이러스성 강화제
+    "name": "Card_Active_044",
+    "cost": 9,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //대수층 펌핑
+    "name": "Card_Active_045",
+    "cost": 18,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //물고기
+    "name": "Card_Active_046",
+    "cost": 9,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //미디어 그룹
+    "name": "Card_Active_047",
+    "cost": 6,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //반려동물
+    "name": "Card_Active_048",
+    "cost": 10,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //가축
+    "name": "Card_Active_049",
+    "cost": 13,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 9
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //개미
+    "name": "Card_Active_050",
+    "cost": 9,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //개선된 합금
+    "name": "Card_Active_051",
+    "cost": 9,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //관리인 계약
+    "name": "Card_Active_052",
+    "cost": 3,
+    "category": "Active",
+    "tags": null,
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": 0
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //강철 제조공장
+    "name": "Card_Active_053",
+    "cost": 15,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //개발 센터
+    "name": "Card_Active_054",
+    "cost": 11,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //공생 곰팡이
+    "name": "Card_Active_055",
+    "cost": 4,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requireCount": -14
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //광석 처리장
+    "name": "Card_Active_056",
+    "cost": 13,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //표토 섭취자
+    "name": "Card_Active_057",
+    "cost": 13,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //화성 철도
+    "name": "Card_Active_058",
+    "cost": 13,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //화성 대학
+    "name": "Card_Active_059",
+    "cost": 8,
+    "category": "Active",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+
+  /********************************/
+  /********Automated Cards*************/
+  /**********************************/
+
+  {
+    //해커들
+    "name": "Card_Automated_001",
+    "cost": 3,
+    "category": "Automated",
+    "tags": null,
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //핵융합 발전
+    "name": "Card_Automated_002",
+    "cost": 14,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Energy",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //호흡필터
+    "name": "Card_Automated_003",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 7
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //후원자
+    "name": "Card_Automated_004",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //핵무기 투하
+    "name": "Card_Automated_005",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //현대화된 구역
+    "name": "Card_Automated_006",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //화력 발전소
+    "name": "Card_Automated_007",
+    "cost": 1,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //흙 공장
+    "name": "Card_Automated_008",
+    "cost": 9,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //토륨 소행성으로부터의 광선
+    "name": "Card_Automated_009",
+    "cost": 32,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Jupiter",
+        "requirecount": 1
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //티타늄 광산
+    "name": "Card_Automated_010",
+    "cost": 7,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //포보스 우주 정거장
+    "name": "Card_Automated_011",
+    "cost": 25,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "City",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //해왕성 탐사선
+    "name": "Card_Automated_012",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //툰드라 농사
+    "name": "Card_Automated_013",
+    "cost": 16,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -6
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //파력 발전
+    "name": "Card_Automated_014",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //풍차
+    "name": "Card_Automated_015",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 7
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //해조류
+    "name": "Card_Automated_016",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 5
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //체펠린 비행선
+    "name": "Card_Automated_017",
+    "cost": 13,
+    "category": "Automated",
+    "tags": null,
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 5
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //칼리스토 패널 광산
+    "name": "Card_Automated_018",
+    "cost": 24,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //탄산염 처리
+    "name": "Card_Automated_019",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //태양광 집중 거울
+    "name": "Card_Automated_020",
+    "cost": 35,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //초대형 댐
+    "name": "Card_Automated_021",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //타이탄으로부터의 메탄
+    "name": "Card_Automated_022",
+    "cost": 28,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //태양광 발전
+    "name": "Card_Automated_023",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //태양풍 발전
+    "name": "Card_Automated_024",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지렁이
+    "name": "Card_Automated_025",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지의류
+    "name": "Card_Automated_026",
+    "cost": 7,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -24
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지하 우물 난방
+    "name": "Card_Automated_027",
+    "cost": 13,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Energy",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //채굴 구역
+    "name": "Card_Automated_028",
+    "cost": 4,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지열 발전
+    "name": "Card_Automated_029",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지하 도시
+    "name": "Card_Automated_030",
+    "cost": 18,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //질소친화 이끼
+    "name": "Card_Automated_031",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //채굴 권리
+    "name": "Card_Automated_032",
+    "cost": 9,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //자기장 돔
+    "name": "Card_Automated_033",
+    "cost": 5,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //자연 보존
+    "name": "Card_Automated_034",
+    "cost": 9,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MOxygen",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //적응한 지의류
+    "name": "Card_Automated_035",
+    "cost": 9,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //전력망
+    "name": "Card_Automated_036",
+    "cost": 18,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //자기장 생성기
+    "name": "Card_Automated_037",
+    "cost": 20,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //잔디
+    "name": "Card_Automated_038",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -16
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //전력 공급 협력단
+    "name": "Card_Automated_039",
+    "cost": 5,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Energy",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지각 응력 발전
+    "name": "Card_Automated_040",
+    "cost": 18,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //이민 왕복선
+    "name": "Card_Automated_041",
+    "cost": 31,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //이오스 카스마 국립공원
+    "name": "Card_Automated_042",
+    "cost": 16,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -12
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //인공 광합성
+    "name": "Card_Automated_043",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //인공위성
+    "name": "Card_Automated_044",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //이오 채굴 산업체
+    "name": "Card_Automated_045",
+    "cost": 41,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //이주민 훈련장
+    "name": "Card_Automated_046",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MOxygen",
+        "requirecount": 5
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //인공 호수
+    "name": "Card_Automated_047",
+    "cost": 15,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -6
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //인수된 사업체
+    "name": "Card_Automated_048",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //온실가스 공장
+    "name": "Card_Automated_049",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //요금징수 정거장
+    "name": "Card_Automated_050",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //원형 돔 도시
+    "name": "Card_Automated_051",
+    "cost": 16,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MOxygen",
+        "requirecount": 9
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //의료 실험실
+    "name": "Card_Automated_052",
+    "cost": 13,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //온실
+    "name": "Card_Automated_053",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //원자력 발전
+    "name": "Card_Automated_054",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //유전자 수리
+    "name": "Card_Automated_055",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //이끼
+    "name": "Card_Automated_056",
+    "cost": 4,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //식량 공장
+    "name": "Card_Automated_057",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //에너지 빼돌리기
+    "name": "Card_Automated_058",
+    "cost": 3,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //연구
+    "name": "Card_Automated_059",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 2
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //열 덫
+    "name": "Card_Automated_060",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //야생화
+    "name": "Card_Automated_061",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -14
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //에너지 절약
+    "name": "Card_Automated_062",
+    "cost": 15,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //연료 공장
+    "name": "Card_Automated_063",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //열대 휴양지
+    "name": "Card_Automated_064",
+    "cost": 13,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //산업단지 건설
+    "name": "Card_Automated_065",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //상업 지구
+    "name": "Card_Automated_066",
+    "cost": 16,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Energy",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //소행성 채굴 협력단
+    "name": "Card_Automated_067",
+    "cost": 13,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mTitanium",
+        "requirecount": 1
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //소형 풍차
+    "name": "Card_Automated_068",
+    "cost": 3,
+    "category": "Automated",
+    "tags": null,
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //산업용 미생물
+    "name": "Card_Automated_069",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //설계된 미생물
+    "name": "Card_Automated_070",
+    "cost": 16,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MCelciusDegree",
+        "requirecount": -14
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //질소친화 이끼
+    "name": "Card_Automated_071",
+    "cost": 30,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //수도
+    "name": "Card_Automated_072",
+    "cost": 26,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //미란다 휴양지
+    "name": "Card_Automated_073",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //발전소
+    "name": "Card_Automated_074",
+    "cost": 4,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //방사화학 공장
+    "name": "Card_Automated_075",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //벼락 수확
+    "name": "Card_Automated_076",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //바이오매스 연소기
+    "name": "Card_Automated_077",
+    "cost": 4,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 6
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //방사선 보호복
+    "name": "Card_Automated_078",
+    "cost": 6,
+    "category": "Automated",
+    "tags": null,
+    "requirement": [
+      {
+        "requirename": "CityTile",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //베스타 조선소
+    "name": "Card_Automated_079",
+    "cost": 15,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //보호된 계곡
+    "name": "Card_Automated_080",
+    "cost": 23,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //돔을 씌운 크레이터
+    "name": "Card_Automated_081",
+    "cost": 24,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MOxygen",
+        "requirecount": 7
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //로봇 인력
+    "name": "Card_Automated_082",
+    "cost": 9,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //맹그로브
+    "name": "Card_Automated_083",
+    "cost": 12,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //모홀 구역
+    "name": "Card_Automated_084",
+    "cost": 20,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //라그랑주 천문대
+    "name": "Card_Automated_085",
+    "cost": 9,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //마리네리스 호수
+    "name": "Card_Automated_086",
+    "cost": 18,
+    "category": "Automated",
+    "tags": null,
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": 0
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //먼지 마개
+    "name": "Card_Automated_087",
+    "cost": 2,
+    "category": "Automated",
+    "tags": null,
+    "requirement": [
+      {
+        "requirename": "MWater",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //미디어 저장소
+    "name": "Card_Automated_088",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //녹티스 농사
+    "name": "Card_Automated_089",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -20
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //농사
+    "name": "Card_Automated_090",
+    "cost": 16,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": 4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //다시마 양식
+    "name": "Card_Automated_091",
+    "cost": 17,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 6
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //달빛 광선
+    "name": "Card_Automated_092",
+    "cost": 13,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //녹티스 시티
+    "name": "Card_Automated_093",
+    "cost": 18,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //농원
+    "name": "Card_Automated_094",
+    "cost": 15,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //단열재
+    "name": "Card_Automated_095",
+    "cost": 2,
+    "category": "Automated",
+    "tags": null,
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //덤불
+    "name": "Card_Automated_096",
+    "cost": 10,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -10
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //곤충
+    "name": "Card_Automated_097",
+    "cost": 9,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 6
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //광산
+    "name": "Card_Automated_098",
+    "cost": 4,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //기업 요새
+    "name": "Card_Automated_099",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //나무
+    "name": "Card_Automated_100",
+    "cost": 13,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -4
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //과산화물 발전
+    "name": "Card_Automated_101",
+    "cost": 7,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //구름 뿌리기
+    "name": "Card_Automated_102",
+    "cost": 11,
+    "category": "Automated",
+    "tags": null,
+    "requirement": [
+      {
+        "requirename": "mWater",
+        "requirecount": 3
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //기업연합
+    "name": "Card_Automated_103",
+    "cost": 8,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //노천 광산
+    "name": "Card_Automated_104",
+    "cost": 25,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //가니메데 식민지
+    "name": "Card_Automated_105",
+    "cost": 20,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "City",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //개방 도시
+    "name": "Card_Automated_106",
+    "cost": 23,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "City",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Building",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mOxygen",
+        "requirecount": 12
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //거대 우주 거울
+    "name": "Card_Automated_107",
+    "cost": 17,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Energy",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //검은 북극 먼지
+    "name": "Card_Automated_108",
+    "cost": 15,
+    "category": "Automated",
+    "tags": null,
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //가니메데 테라포밍
+    "name": "Card_Automated_109",
+    "cost": 33,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Jupiter",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //개선된 생태계
+    "name": "Card_Automated_110",
+    "cost": 11,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Plant",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Animal",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Plant",
+        "requirecount": 1
+      },
+      {
+        "requirename": "Microbe",
+        "requirecount": 1
+      },
+      {
+        "requirename": "Animal",
+        "requirecount": 1
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //거대 절벽 협력단
+    "name": "Card_Automated_111",
+    "cost": 6,
+    "category": "Automated",
+    "tags": null,
+    "requirement": [
+      {
+        "requirename": "mIron",
+        "requirecount": 1
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //고세균
+    "name": "Card_Automated_112",
+    "cost": 6,
+    "category": "Automated",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "MCelciusDegree",
+        "requirecount": -18
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+
+  /************************/
+  /********Event Card******/
+  /************************/
+
+  {
+    //개선된 온실가스 투입
+    "name": "Card_Event_001",
+    "cost": 9,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": [
+      {
+        "funcname": "DiffSourceProduct"
+      }
+    ],
+    "funcArgs": [
+      {
+        "arg": "Heat"
+      },
+      {
+        "arg": 2
+      }
+    ],
+    "funcArgsInd": [
+      {
+        "ind": 1
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1
+  },
+  {
+    //계약직 노동자
+    "name": "Card_Event_002",
+    "cost": 0,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+    //&&&&&&&&&&&&&
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //기술 시연
+    "name": "Card_Event_003",
+    "cost": 5,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": [
+      {
+        "funcname": "DrawCard"
+      }
+    ],
+    "funcArgs": [
+      {
+        "arg": 2
+      }
+    ],
+    "funcArgsInd": [
+      {
+        "ind": 0
+      }
+    ],
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1
+  },
+  {
+    //대량 호송
+    "name": "Card_Event_004",
+    "cost": 36,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+    "funcName": [
+      {
+        "funcname": "SelectTile"
+      },
+      {
+        "funcname": "DrawCard"
+      },
+      {
+        "funcname": "SelectAndGetResource"
+      }
+    ],
+    "funcArgs": [
+      {
+        "arg": "Water"
+      },
+      {
+        "arg": false
+      },
+      {
+        "arg": 2
+      },
+      {
+        "arg": "Plant"
+      },
+      {
+        "arg": "Animal"
+      },
+      {
+        "arg": 5
+      },
+      {
+        "arg": 4
+      }
+    ],
+    "funcArgsInd": [
+      {
+        "ind": 1
+      },
+      {
+        "ind": 2
+      },
+      {
+        "ind": 6
+      }
+    ],
+    "score": 2,
+    "tokenType": null,
+    "scoreRatio": 1
+  },
+  {
+    //거대 얼음 소행성
+    "name": "Card_Event_005",
+    "cost": 36,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //고용된 약탈자
+    "name": "Card_Event_006",
+    "cost": 1,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //대기권 감속된 암모니아 소행성
+    "name": "Card_Event_007",
+    "cost": 26,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //데이모스의 추락
+    "name": "Card_Event_008",
+    "cost": 31,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //만년설 녹이기
+    "name": "Card_Event_009",
+    "cost": 5,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": 2
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //미네랄 퇴적층
+    "name": "Card_Event_010",
+    "cost": 5,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //발명 대회
+    "name": "Card_Event_011",
+    "cost": 2,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //사보타주
+    "name": "Card_Event_012",
+    "cost": 1,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //매수된 위원회
+    "name": "Card_Event_013",
+    "cost": 7,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //바이러스
+    "name": "Card_Event_014",
+    "cost": 1,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Microbe",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //불활성 가스 방출
+    "name": "Card_Event_015",
+    "cost": 14,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //사업적인 만남
+    "name": "Card_Event_016",
+    "cost": 7,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //성간 식민지 함선
+    "name": "Card_Event_017",
+    "cost": 24,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "Science",
+        "requirecount": 5
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //수소 투입
+    "name": "Card_Event_018",
+    "cost": 16,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //용암 흐름
+    "name": "Card_Event_019",
+    "cost": 18,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //소행성
+    "name": "Card_Event_020",
+    "cost": 14,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //얼음 소행성
+    "name": "Card_Event_021",
+    "cost": 23,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //온실가스 투입
+    "name": "Card_Event_022",
+    "cost": 7,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //유로파로부터의 호송
+    "name": "Card_Event_023",
+    "cost": 15,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //작은 소행성
+    "name": "Card_Event_024",
+    "cost": 10,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지하 저수지
+    "name": "Card_Event_025",
+    "cost": 11,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //질소가 풍부한 소행성
+    "name": "Card_Event_026",
+    "cost": 31,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //큰 소행성
+    "name": "Card_Event_027",
+    "cost": 27,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //지역 보온
+    "name": "Card_Event_028",
+    "cost": 1,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //질소 투입
+    "name": "Card_Event_029",
+    "cost": 23,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //채굴 탐사
+    "name": "Card_Event_030",
+    "cost": 12,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //토지 소유권 주장
+    "name": "Card_Event_031",
+    "cost": 1,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //투자 대출
+    "name": "Card_Event_032",
+    "cost": 3,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Earth",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //혜성 견인
+    "name": "Card_Event_033",
+    "cost": 23,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //홍수
+    "name": "Card_Event_034",
+    "cost": 7,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //영구동토 추출
+    "name": "Card_Event_035",
+    "cost": 8,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": [
+      {
+        "requirename": "mCelciusDegree",
+        "requirecount": -8
+      }
+    ],
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //특별한 설계
+    "name": "Card_Event_036",
+    "cost": 4,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Science",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //혜성
+    "name": "Card_Event_037",
+    "cost": 21,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Space",
+        "tagcount": 1
+      },
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  },
+  {
+    //CEO가 좋아하는 프로젝트
+    "name": "Card_Event_038",
+    "cost": 1,
+    "category": "Event",
+    "tags": [
+      {
+        "tagname": "Event",
+        "tagcount": 1
+      }
+    ],
+    "requirement": null,
+
+    ///////////////
+
+    "funcName": null,
+    "funcArgs": null,
+    "activeFuncName": null,
+    "activeFuncArgs": null,
+    "score": 0,
+    "tokenType": null,
+    "scoreRatio": 1,
+    "isTargeting": "num"
+  }
+]
