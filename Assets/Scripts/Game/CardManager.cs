@@ -447,6 +447,45 @@ namespace TerraFormingMars
             }
         }
 
+        /// <summary>
+        /// 카드 사용
+        /// CardInfo내에 있는 모든 함수
+        /// 사용함
+        /// </summary>
+        /// <param name="card">카드</param>
+        public void UseCard(CardInfo card)
+        {
+            int n = card.FuncName.Length;
+            int j = 0;
+
+            for(int i = 0; i<n; i++)
+            {
+                List<object> objs = new List<object>();
+
+                for (; j <= card.FuncArgsInd[i]; j++)
+                    objs.Add(card.FuncArgsInd[j]);
+
+                ActionManager.Instance.CardFuncAction(card.FuncName[i], objs.ToArray());
+            }
+        }
+
+        /// <summary>
+        /// 카드 함수 시작
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        public IEnumerator StartCardFunc(params object[] args)
+        {
+            while (ActionManager.Instance.IsDoingAction)
+                yield return new WaitForEndOfFrame();
+
+            ActionManager.Instance.IsDoingAction = true;
+
+            StartCoroutine((string)args[0], args[1]);
+
+            yield break;
+        }
+
         #region 카드 효과 함수들
 
         /// <summary>
@@ -479,6 +518,7 @@ namespace TerraFormingMars
             }
 
             ActionManager.Instance.IsActionSuccess = true;
+            ActionManager.Instance.IsDoingAction = false;
 
             yield break;
         }
@@ -503,6 +543,7 @@ namespace TerraFormingMars
             src.Amount += sourceDiff;
 
             ActionManager.Instance.IsActionSuccess = true;
+            ActionManager.Instance.IsDoingAction = false;
 
             yield break;
         }
@@ -526,6 +567,7 @@ namespace TerraFormingMars
             src.Production += sourceProductDiff;
 
             ActionManager.Instance.IsActionSuccess = true;
+            ActionManager.Instance.IsDoingAction = false;
 
             yield break;
         }
@@ -550,9 +592,11 @@ namespace TerraFormingMars
                 {
                     ((ActiveCardInfo)player.Hands[i]).TokenNum += diff;
                     ActionManager.Instance.IsActionSuccess = true;
+                    ActionManager.Instance.IsDoingAction = false;
                     yield break;
                 }
             }
+            ActionManager.Instance.IsDoingAction = false;
 
             yield break;
         }
@@ -582,6 +626,36 @@ namespace TerraFormingMars
 
                 button.onClick.AddListener(
                     delegate () { PlayerUIManager.Instance.DiffSourceProduct(i, sourceName, diff); });
+            }
+
+            yield break;
+        }
+
+        /// <summary>
+        /// 대상을 선택하고,
+        /// 그 대상의 자원을 변동시킴
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        IEnumerator TargetDiffSource(params object[] args)
+        {
+            PlayerUIManager.Instance.SelectPlayerPanel.gameObject.SetActive(true);
+
+            Transform trans = PlayerUIManager.Instance.SelectPlayerPanel;
+
+            int n = trans.childCount;
+
+            string sourceName = (string)args[0];
+            int diff = (int)args[1];
+
+            for (int i = 0; i < n; i++)
+            {
+                Button button = trans.GetChild(i).GetComponent<Button>();
+
+                button.onClick.RemoveAllListeners();
+
+                button.onClick.AddListener(
+                    delegate () { PlayerUIManager.Instance.DiffSource(i, sourceName, diff); });
             }
 
             yield break;
@@ -687,6 +761,7 @@ namespace TerraFormingMars
             }
 
             ActionManager.Instance.IsActionSuccess = true;
+            ActionManager.Instance.IsDoingAction = false;
 
             yield break;
         }
@@ -747,6 +822,26 @@ namespace TerraFormingMars
                 SelectedResourceName = string.Empty;
 
                 ActionManager.Instance.IsActionSuccess = true;
+            }
+
+            yield break;
+        }
+
+        /// <summary>
+        /// 입력된 값 만큼
+        /// 온도 증가
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        IEnumerator IncreaseCelciusDegree(params object[] args)
+        {
+            int Amount = (int)args[0];
+
+            for(int i = 0; i<Amount&&BoardManager.Instance.CelciusDegree!=8; i++)
+            {
+                BoardManager.Instance.CelciusDegree += 2;
+                PlayerManager.Instance.players
+                    [GameManager.Instance.TurnPlayerIndex].TerraFormingLevel++;
             }
 
             yield break;

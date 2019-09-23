@@ -252,7 +252,32 @@ public class PlayerUIManager : Singleton<PlayerUIManager>
 
         src.Production += diff;
 
+        SelectPlayerPanel.gameObject.SetActive(false);
+
         ActionManager.Instance.IsActionSuccess = true;
+        ActionManager.Instance.IsDoingAction = false;
+    }
+
+    /// <summary>
+    /// 자원 변동 시킴
+    /// </summary>
+    /// <param name="i">플레이어 인덱스</param>
+    /// <param name="sourcename">자원 이름</param>
+    /// <param name="diff">변동량</param>
+    public void DiffSource(int i, string sourcename, int diff)
+    {
+        PlayerInfo player = PlayerManager.Instance.players[i];
+
+        Type tp = typeof(PlayerInfo);
+        FieldInfo fld = tp.GetField(sourcename);
+        Source src = (Source)fld.GetValue(player);
+
+        src.Amount += diff;
+
+        SelectPlayerPanel.gameObject.SetActive(false);
+
+        ActionManager.Instance.IsActionSuccess = true;
+        ActionManager.Instance.IsDoingAction = false;
     }
 
     /// <summary>

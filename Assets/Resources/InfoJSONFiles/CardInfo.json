@@ -5185,17 +5185,60 @@
       }
     ],
     "requirement": null,
-
-    ///////////////
-
-    "funcName": null,
-    "funcArgs": null,
-    "activeFuncName": null,
-    "activeFuncArgs": null,
+    "funcName": [
+      {
+        "funcname": "IncreaseCelciusDegree"
+      },
+      {
+        "funcname": "SelectTile"
+      },
+      {
+        "funcname": "SelectTile"
+      },
+      {
+        "funcname": "TargetDiffSource"
+      }
+    ],
+    "funcArgs": [
+      {
+        "arg": "2"
+      },
+      {
+        "arg": "Water"
+      },
+      {
+        "arg": false
+      },
+      {
+        "arg": "Water"
+      },
+      {
+        "arg": false
+      },
+      {
+        "arg": "Plant"
+      },
+      {
+        "arg": -6
+      }
+    ],
+    "funcArgsInd": [
+      {
+        "ind": 0
+      },
+      {
+        "ind": 2
+      },
+      {
+        "ind": 4
+      },
+      {
+        "ind": 6
+      }
+    ],
     "score": 0,
     "tokenType": null,
-    "scoreRatio": 1,
-    "isTargeting": "num"
+    "scoreRatio": 1
   },
   {
     //고용된 약탈자

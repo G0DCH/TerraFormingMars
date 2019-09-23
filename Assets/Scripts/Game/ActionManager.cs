@@ -12,6 +12,11 @@ namespace TerraFormingMars
         public bool IsActionSuccess;
 
         /// <summary>
+        /// 행동 중인가
+        /// </summary>
+        public bool IsDoingAction = false;
+
+        /// <summary>
         /// FuncName의 이름을 가진 코루틴을 실행함
         /// 버튼용
         /// </summary>
@@ -69,7 +74,7 @@ namespace TerraFormingMars
                 StopCoroutine(ActionResultUpdater());
                 StopCoroutine(SelectTile());
 
-                CardManager.Instance.StartCoroutine(FuncName, FuncArgs);
+                CardManager.Instance.StartCoroutine(CardManager.Instance.StartCardFunc(FuncName, FuncArgs));
 
                 StartCoroutine(ActionResultUpdater());
             }
@@ -172,6 +177,8 @@ namespace TerraFormingMars
 
                 yield return new WaitForEndOfFrame();
             }
+
+            IsDoingAction = false;
 
             yield break;
         }
