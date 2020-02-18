@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
-  AppID: f8bc8893-ad70-4444-9cbd-26ff7be764cf
+  AppID: 
   VoiceAppID: 
   ChatAppID: 
-  HostType: 1
-  PreferredRegion: 9
+  HostType: 0
+  PreferredRegion: 0
   EnabledRegions: -1
-  Protocol: 1
+  Protocol: 0
   ServerAddress: 
   ServerPort: 5055
   VoiceServerPort: 5055
@@ -37,16 +37,16 @@ MonoBehaviour:
   - PunRespawn
   - RequestForPickupItems
   - RequestForPickupTimes
+  - SendCorpIndexList
+  - SendEntry
+  - SendFirstTurn
+  - SendGenerationEnd
+  - SendLeaveRoom
+  - SendMakeList
   - SendMsg
   - SendReadyMessage
-  - SendEntry
-  - SendMakeList
-  - SendLeaveRoom
-  - SendCorpIndexList
-  - SendShuffleCardIndexList
   - SendSelectedCorpsAndCards
-  - SendFirstTurn
-  - SendTurnEnd
-  - SendGenerationEnd
   - SendSelectedResourceName
+  - SendShuffleCardIndexList
+  - SendTurnEnd
   DisableAutoOpenWizard: 1
