@@ -24,6 +24,19 @@ namespace TerraFormmingMars.Card
         public int Score { get { return score; } }
 
         [SerializeField]
-        public delegate void functionList(params object[] arguments);
+        private List<string> functionList;
+        public List<string> FunctionList { get { return functionList; } }
+
+        [SerializeField]
+        private List<string> functionArguments;
+        public List<string> FunctionArguments { get { return functionArguments; } }
+
+        [SerializeField]
+        private string limitFunction;
+        public string LimitFunction { get { return limitFunction; } }
+
+        [SerializeField]
+        private List<string> limitFunctionArguments;
+        public List<string> LimitFunctionArguments { get { return limitFunctionArguments; } }
     }
 }

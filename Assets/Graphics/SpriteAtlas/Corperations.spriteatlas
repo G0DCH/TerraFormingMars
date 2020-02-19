@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Corperations
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: c959830cdb1df924ab70dae77dcb73a3, type: 3}
+    - {fileID: 2800000, guid: 7afd26e1bc5ae44478fb91ed3a1499c6, type: 3}
+    - {fileID: 2800000, guid: b1c971ded4039ce48b10cbae9cd7c6ad, type: 3}
+    - {fileID: 2800000, guid: 5dfa4d283d2300848bc6b7ba3da4000a, type: 3}
+    - {fileID: 2800000, guid: 3cee11a4dea32104aa77cf6e7952383f, type: 3}
+    - {fileID: 2800000, guid: 4fbafa83440730f449fe416de5445952, type: 3}
+    - {fileID: 2800000, guid: 201f361aec9f626438f7265fc5a3408f, type: 3}
+    - {fileID: 2800000, guid: 7a7a974d2c32ed04f9b4d13fa8f685d6, type: 3}
+    - {fileID: 2800000, guid: bd7c49cc47ca67e4e885f9c1de60ec01, type: 3}
+    - {fileID: 2800000, guid: 9f86532b2fab6c64694e0d77c5b02ddb, type: 3}
+    - {fileID: 2800000, guid: 4988c7f65c999d2458e5905d5341ddef, type: 3}
+    - {fileID: 2800000, guid: 7963a277e20397d4cb6fd4b4f2b0ed39, type: 3}
+    - {fileID: 2800000, guid: 79c0f72f80e806149843be3772fe2d16, type: 3}
+    totalSpriteSurfaceArea: 4070777
+    bindAsDefault: 1
+    storedHash:
+      serializedVersion: 2
+      Hash: 00000000000000000000000000000000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 7afd26e1bc5ae44478fb91ed3a1499c6, type: 3}
+  - {fileID: 21300000, guid: 4fbafa83440730f449fe416de5445952, type: 3}
+  - {fileID: 21300000, guid: 3cee11a4dea32104aa77cf6e7952383f, type: 3}
+  - {fileID: 21300000, guid: 4988c7f65c999d2458e5905d5341ddef, type: 3}
+  - {fileID: 21300000, guid: 7963a277e20397d4cb6fd4b4f2b0ed39, type: 3}
+  - {fileID: 21300000, guid: 5dfa4d283d2300848bc6b7ba3da4000a, type: 3}
+  - {fileID: 21300000, guid: 201f361aec9f626438f7265fc5a3408f, type: 3}
+  - {fileID: 21300000, guid: 9f86532b2fab6c64694e0d77c5b02ddb, type: 3}
+  - {fileID: 21300000, guid: c959830cdb1df924ab70dae77dcb73a3, type: 3}
+  - {fileID: 21300000, guid: bd7c49cc47ca67e4e885f9c1de60ec01, type: 3}
+  - {fileID: 21300000, guid: 7a7a974d2c32ed04f9b4d13fa8f685d6, type: 3}
+  - {fileID: 21300000, guid: b1c971ded4039ce48b10cbae9cd7c6ad, type: 3}
+  - {fileID: 21300000, guid: 79c0f72f80e806149843be3772fe2d16, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Corps_EcoLine
+  - Corps_MiningGuild
+  - Corps_Inventrix
+  - Corps_TharsisRepublic
+  - Corps_ThorGate
+  - Corps_InterplanetaryCinematics
+  - Corps_PhoboLog
+  - Corps_Teractor
+  - Corps_Credicor
+  - Corps_StarterCorp
+  - Corps_SaturnSystems
+  - Corps_Helion
+  - Corps_UNMI
+  m_Tag: Corperations
+  m_IsVariant: 0
