@@ -5,7 +5,7 @@ using UnityEngine;
 namespace TerraFormmingMars.Logics.Manager
 {
     /// <summary>
-    /// string을 Enum 타입으로 바꿔주는 함수 탑재
+    /// string을 Environment, Tag, TileType 타입으로 바꿔주는 함수 탑재
     /// </summary>
     public class EnumManager : Utility.Singleton<EnumManager>
     {

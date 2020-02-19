@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TerraFormmingMars.Logics;
 
-namespace TerraFormmingMars.Card
+namespace TerraFormmingMars.Entity.Card
 {
     [CreateAssetMenu(fileName = "Card Data", menuName = "Scriptable Object/Card Data", order = int.MaxValue)]
     public class CardData : ScriptableObject
@@ -11,13 +12,16 @@ namespace TerraFormmingMars.Card
         private int cost;
         public int Cost { get { return cost; } }
 
-        [SerializeField]
         private Image cardImage;
-        public Image CardImage { get { return cardImage; } }
+        public Image CardImage { set { cardImage = value; } get { return cardImage; } }
 
         [SerializeField]
-        private List<string> tags;
-        public List<string> Tags { get { return tags; } }
+        private string cardImageName;
+        public string CardImageName { get { return cardImageName; } }
+
+        [SerializeField]
+        private List<Tag> tags;
+        public List<Tag> Tags { get { return tags; } }
 
         [SerializeField]
         private int score;

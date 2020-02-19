@@ -3,7 +3,7 @@
     public enum TileType
     {
         Water,
-        Plant,
+        Tree,
         City,
         Capital,
         Market,

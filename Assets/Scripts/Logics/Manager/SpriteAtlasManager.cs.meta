@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 69d4bcf50fea49c4e95155cd0d01b852
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ActiveCards: {fileID: 4343727234628468602, guid: cc3bbedaf4b6cf94b80d8d402d39a66a,
+      type: 2}
+  - AutomatedCards: {fileID: 4343727234628468602, guid: a1edebaacb6659443b01f9b49c1fe43f,
+      type: 2}
+  - EventCards: {fileID: 4343727234628468602, guid: 19f1583753ec4d7478c1c36d7a6a3739,
+      type: 2}
+  - Corperations: {fileID: 4343727234628468602, guid: 561f38a3e7ff93a4cbea8b7398b34fae,
+      type: 2}
+  - Icons: {fileID: 4343727234628468602, guid: 9a0e6c2039ea9364fb0888a8420c7ddb, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Automated
+  m_Name: AutomatedCards
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -385,5 +385,5 @@ SpriteAtlas:
   - Card_Automated_059
   - Card_Automated_007
   - Card_Automated_091
-  m_Tag: Automated
+  m_Tag: AutomatedCards
   m_IsVariant: 0

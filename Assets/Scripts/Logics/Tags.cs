@@ -1,5 +1,6 @@
 ﻿namespace TerraFormmingMars.Logics
 {
+    [System.Serializable]
     public enum Tag
     {
         Building,
