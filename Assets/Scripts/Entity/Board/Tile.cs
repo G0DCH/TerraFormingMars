@@ -11,8 +11,7 @@ namespace TerraFormmingMars.Entity.Board
         private TileData myTileData;
         public TileData MyTileData { get { return myTileData; } }
 
-        [SerializeField]
-        private Tile[] nearTiles;
+        private List<Tile> nearTiles;
 
         public int GetScore()
         {
@@ -36,6 +35,15 @@ namespace TerraFormmingMars.Entity.Board
             }
 
             return score;
+        }
+
+        private void InitNearTiles()
+        {
+            string lineName = transform.parent.name;
+            string myName = transform.name;
+
+            int lineNum = int.Parse(lineName[4].ToString());
+            int tileNum = int.Parse(myName[4].ToString());
         }
     }
 }
