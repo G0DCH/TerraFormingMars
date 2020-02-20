@@ -11,10 +11,10 @@ namespace TerraFormmingMars.Logics.Manager
     {
         public object StringToEnumType(string name)
         {
-            Environment environment;
-            if(System.Enum.TryParse<Environment>(name, out environment))
+            PLANETINDICATORS planetIndicators;
+            if(System.Enum.TryParse<PLANETINDICATORS>(name, out planetIndicators))
             {
-                return environment;
+                return planetIndicators;
             }
 
             Tag tag;

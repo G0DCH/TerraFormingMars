@@ -27,20 +27,13 @@ namespace TerraFormmingMars.Entity.Card
         private int score;
         public int Score { get { return score; } }
 
+        [Space]
         [SerializeField]
-        private List<string> functionList;
-        public List<string> FunctionList { get { return functionList; } }
+        private List<FunctionData> functionList;
+        public List<FunctionData> FunctionList { get { return functionList; } }
 
         [SerializeField]
-        private List<string> functionArguments;
-        public List<string> FunctionArguments { get { return functionArguments; } }
-
-        [SerializeField]
-        private string limitFunction;
-        public string LimitFunction { get { return limitFunction; } }
-
-        [SerializeField]
-        private List<string> limitFunctionArguments;
-        public List<string> LimitFunctionArguments { get { return limitFunctionArguments; } }
+        private FunctionData limitFunction;
+        public FunctionData LimitFunction { get { return limitFunction; } }
     }
 }

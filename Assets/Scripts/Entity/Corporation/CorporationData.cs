@@ -25,11 +25,7 @@ namespace TerraFormmingMars.Entity.Corporation
         public List<Source> StartSource { get { return startSource; } }
 
         [SerializeField]
-        private List<string> functionList;
-        public List<string> FunctionList { get { return functionList; } }
-
-        [SerializeField]
-        private List<string> functionArguments;
-        public List<string> FunctionArguments { get { return functionArguments; } }
+        private List<FunctionData> functionList;
+        public List<FunctionData> FunctionList { get { return functionList; } }
     }
 }

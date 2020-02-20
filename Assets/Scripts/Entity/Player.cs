@@ -13,6 +13,16 @@ namespace TerraFormmingMars.Entity
         private Source Energy;
         private Source Heat;
 
-        private List<Card.Card> Hands;
+        private Corporation.Corporation corporation;
+
+        private List<Card.Card> hands;
+        private List<Card.Card> selectHands;
+
+        //사용한 카드들
+        private List<Card.Card> activeCards;
+        private List<Card.Card> automatedCards;
+        private List<Card.Card> eventCards;
+
+        private int terraformmingLevel;
     }
 }

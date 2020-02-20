@@ -2,12 +2,13 @@
 {
     public enum TileType
     {
-        Water,
+        Ocean,
         Tree,
         City,
         Capital,
         Market,
         Special,
-        Null
+        Null,
+        Ice
     }
 }

@@ -1,9 +1,9 @@
 ﻿namespace TerraFormmingMars.Logics
 {
-    public enum Environment
+    public enum PLANETINDICATORS
     {
-        Degree,
-        Oxygen,
-        Null
+        TEMPERATURE,
+        OXYGEN,
+        WATER
     }
 }
