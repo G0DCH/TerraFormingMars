@@ -198,9 +198,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &13233547
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,9 +291,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &42386582
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,9 +381,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &47962453
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,9 +474,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &85030752
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,9 +567,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &103900773
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,9 +703,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &135920940
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,9 +796,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &136736262
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,9 +886,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 2
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &184293196
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,9 +979,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &215563199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,9 +1114,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 1
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &276235882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,9 +1289,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &285850342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,9 +1379,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 1
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &321341395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,9 +1472,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &337461634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,9 +1631,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &388102709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,9 +1721,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 1
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &401627193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,9 +1814,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 1
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &420074665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,9 +1907,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &508094046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,9 +2000,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 1
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &529102448
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,9 +2093,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &543685639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,9 +2186,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &584850863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,9 +2362,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 7
     source: []
-    cardCount: 0
+    cardCount: 1
+  nearTiles: []
 --- !u!1 &679116564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2386,9 +2452,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
-    cardCount: 0
+    cardCount: 1
+  nearTiles: []
 --- !u!1 &682456253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,9 +2615,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &743523526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2637,9 +2705,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &786030909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,9 +2795,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &788651296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,9 +2929,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &865758926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,9 +3022,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &950116244
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,9 +3185,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &987316525
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,9 +3275,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1005574480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,9 +3445,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 2
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1050666747
 GameObject:
   m_ObjectHideFlags: 0
@@ -3491,9 +3578,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1110292627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,9 +3671,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1119065962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,9 +3761,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1151271453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,9 +3851,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 2
+      amount: 1
+      product: 0
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1173194654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3847,9 +3947,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1198374660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,9 +4037,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1204831551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,9 +4130,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1209538804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4114,9 +4220,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1239760528
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,9 +4310,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1243101038
 GameObject:
   m_ObjectHideFlags: 0
@@ -4365,9 +4476,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1273103770
 GameObject:
   m_ObjectHideFlags: 0
@@ -4599,9 +4714,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
-    cardCount: 0
+    cardCount: 1
+  nearTiles: []
 --- !u!1 &1333348229
 GameObject:
   m_ObjectHideFlags: 0
@@ -4688,9 +4804,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 7
     source: []
-    cardCount: 0
+    cardCount: 2
+  nearTiles: []
 --- !u!1 &1358552211
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,9 +4894,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1364370119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4910,9 +5028,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1390983790
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,9 +5121,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1396128582
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,9 +5214,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1405751937
 GameObject:
   m_ObjectHideFlags: 0
@@ -5217,9 +5344,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1458165648
 GameObject:
   m_ObjectHideFlags: 0
@@ -5408,9 +5539,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1475455170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5497,9 +5632,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 1
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1494631331
 GameObject:
   m_ObjectHideFlags: 0
@@ -5586,9 +5725,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1536199308
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,9 +5818,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 7
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1566272260
 GameObject:
   m_ObjectHideFlags: 0
@@ -5764,9 +5908,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1574029887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,9 +6001,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1675561889
 GameObject:
   m_ObjectHideFlags: 0
@@ -5942,9 +6091,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1820284630
 GameObject:
   m_ObjectHideFlags: 0
@@ -6031,9 +6181,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 1
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1834587672
 GameObject:
   m_ObjectHideFlags: 0
@@ -6163,9 +6317,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 1
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1858250596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6252,9 +6410,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 6
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &1964934033
 GameObject:
   m_ObjectHideFlags: 0
@@ -6341,9 +6503,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
-    source: []
+    tileType: 7
+    source:
+    - sourceType: 3
+      amount: 2
+      product: 0
     cardCount: 0
+  nearTiles: []
 --- !u!1 &2036872264
 GameObject:
   m_ObjectHideFlags: 0
@@ -6430,9 +6596,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &2082541054
 GameObject:
   m_ObjectHideFlags: 0
@@ -6519,9 +6686,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
 --- !u!1 &2089754465
 GameObject:
   m_ObjectHideFlags: 0
@@ -6768,6 +6936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTileData:
-    tileType: 0
+    tileType: 6
     source: []
     cardCount: 0
+  nearTiles: []
