@@ -29,6 +29,18 @@ namespace TerraFormmingMars.Logics.Manager
                 return tileType;
             }
 
+            CardType cardType;
+            if (System.Enum.TryParse<CardType>(name, out cardType))
+            {
+                return cardType;
+            }
+
+            SourceType sourceType;
+            if (System.Enum.TryParse<SourceType>(name, out sourceType))
+            {
+                return sourceType;
+            }
+
             Debug.LogError("입력된 이름 " + name + "에 해당하는 Name 값이 없습니다.");
             return null;
         }

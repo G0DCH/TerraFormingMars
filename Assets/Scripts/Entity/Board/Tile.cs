@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TerraFormmingMars.Logics;
 
 namespace TerraFormmingMars.Entity.Board
@@ -13,6 +14,12 @@ namespace TerraFormmingMars.Entity.Board
 
         [SerializeField]
         private List<Tile> nearTiles;
+        private Image tileImage;
+
+        private void Awake()
+        {
+            tileImage = GetComponent<Image>();
+        }
 
         private void Start()
         {

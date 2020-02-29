@@ -9,6 +9,7 @@
         Market,
         Special,
         Null,
-        Ice
+        Ice,
+        Volcano
     }
 }
