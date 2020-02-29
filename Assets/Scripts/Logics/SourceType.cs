@@ -8,6 +8,7 @@
         Titanium,
         Plant,
         Energy,
-        Heat
+        Heat,
+        Empty
     }
 }

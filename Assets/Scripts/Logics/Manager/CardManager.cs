@@ -12,5 +12,13 @@ namespace TerraFormmingMars.Logics.Manager
 
         [SerializeField]
         private List<CardData> cardDataList;
+
+        public void UseCard(CardData cardData)
+        {
+            //제한 검사
+            //비용 검사
+            //함수 실행
+            //비용 지불
+        }
     }
 }

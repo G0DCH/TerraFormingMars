@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace TerraFormmingMars.Entity.Card
 {
+    [CreateAssetMenu(fileName = "Stack Card Data", menuName = "Scriptable Object/Stack Card Data", order = int.MaxValue)]
     public class StackCardData : ActiveCardData
     {
         [SerializeField]

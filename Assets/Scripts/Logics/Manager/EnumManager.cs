@@ -9,6 +9,11 @@ namespace TerraFormmingMars.Logics.Manager
     /// </summary>
     public class EnumManager : Utility.Singleton<EnumManager>
     {
+        /// <summary>
+        /// Source 타입은 제외하고 됨
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public object StringToEnumType(string name)
         {
             PLANETINDICATORS planetIndicators;
@@ -35,16 +40,15 @@ namespace TerraFormmingMars.Logics.Manager
                 return cardType;
             }
 
-            SourceType sourceType;
-            if (System.Enum.TryParse<SourceType>(name, out sourceType))
-            {
-                return sourceType;
-            }
-
             Debug.LogError("입력된 이름 " + name + "에 해당하는 Name 값이 없습니다.");
             return null;
         }
 
+        /// <summary>
+        /// Source 타입은 제외하고 됨
+        /// </summary>
+        /// <param name="names"></param>
+        /// <returns></returns>
         public object[] StringsToEnumTypes(string[] names)
         {
             List<object> EnumTypeList = new List<object>();
@@ -57,6 +61,32 @@ namespace TerraFormmingMars.Logics.Manager
             }
 
             return EnumTypeList.ToArray();
+        }
+
+        public SourceType StringToSourceType(string name)
+        {
+            SourceType sourceType;
+            if (System.Enum.TryParse<SourceType>(name, out sourceType))
+            {
+                return sourceType;
+            }
+
+            Debug.LogError("입력된 이름 " + name + "에 해당하는 Name 값이 없습니다.");
+            return SourceType.Empty;
+        }
+
+        public SourceType[] StringsToSourceTypes(string[] names)
+        {
+            List<SourceType> sourceTypeList = new List<SourceType>();
+
+            foreach (string name in names)
+            {
+                SourceType convertResult = StringToSourceType(name);
+
+                sourceTypeList.Add(convertResult);
+            }
+
+            return sourceTypeList.ToArray();
         }
     }
 }
