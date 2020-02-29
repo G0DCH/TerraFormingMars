@@ -27,6 +27,10 @@ namespace TerraFormmingMars.Entity.Card
         private int score;
         public int Score { get { return score; } }
 
+        [SerializeField]
+        private CardType cardType;
+        public CardType CardType { get { return cardType; } }
+
         [Space]
         [SerializeField]
         private List<FunctionData> functionList;

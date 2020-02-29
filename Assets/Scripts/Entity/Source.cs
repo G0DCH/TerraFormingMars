@@ -19,5 +19,12 @@ namespace TerraFormmingMars.Entity
         [SerializeField]
         private int product;
         public int Product { set { product = value; } get { return product; } }
+
+        public Source(SourceType mySourceType)
+        {
+            SourceType = mySourceType;
+            Amount = 0;
+            Product = 0;
+        }
     }
 }
