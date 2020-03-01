@@ -17,25 +17,25 @@ namespace TerraFormmingMars.Logics.Manager
         public object StringToEnumType(string name)
         {
             PLANETINDICATORS planetIndicators;
-            if(System.Enum.TryParse<PLANETINDICATORS>(name, out planetIndicators))
+            if(System.Enum.TryParse<PLANETINDICATORS>(name, out planetIndicators) == true)
             {
                 return planetIndicators;
             }
 
             Tag tag;
-            if(System.Enum.TryParse<Tag>(name, out tag))
+            if(System.Enum.TryParse<Tag>(name, out tag) == true)
             {
                 return tag;
             }
 
             TileType tileType;
-            if(System.Enum.TryParse<TileType>(name, out tileType))
+            if(System.Enum.TryParse<TileType>(name, out tileType) == true)
             {
                 return tileType;
             }
 
             CardType cardType;
-            if (System.Enum.TryParse<CardType>(name, out cardType))
+            if (System.Enum.TryParse<CardType>(name, out cardType) == true)
             {
                 return cardType;
             }
@@ -66,7 +66,7 @@ namespace TerraFormmingMars.Logics.Manager
         public SourceType StringToSourceType(string name)
         {
             SourceType sourceType;
-            if (System.Enum.TryParse<SourceType>(name, out sourceType))
+            if (System.Enum.TryParse<SourceType>(name, out sourceType) == true)
             {
                 return sourceType;
             }

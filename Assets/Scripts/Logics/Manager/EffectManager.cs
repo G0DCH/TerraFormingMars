@@ -13,13 +13,13 @@ namespace TerraFormmingMars.Logics.Manager
 
             Source source;
             //자원을 알맞게 획득했다면 생산량 변경
-            if(player.TypeSourceMap.TryGetValue(sourceType, out source))
+            if(player.TypeSourceMap.TryGetValue(sourceType, out source) == true)
             {
                 source.Product += sourceDifference;
             }
             else
             {
-                Debug.LogError(sourceType + "에 해당하는 자원이 존재하지 않습니다.");
+                Debug.LogError(nameof(ChangeSourceProduct) + " : " + sourceType + "에 해당하는 자원이 존재하지 않습니다.");
             }
         }
     }

@@ -18,7 +18,7 @@ namespace TerraFormmingMars.Logics.Manager
             //제한 검사
             if(LimitFunctionManager.Instance.CheckLimit(cardData.LimitFunction) == false)
             {
-                return;
+                //return;
             }
             //비용 검사
             if(CheckCost(cardData) == false)
@@ -34,7 +34,7 @@ namespace TerraFormmingMars.Logics.Manager
             int cost = cardData.Cost;
 
             Entity.Source source;
-            if(PlayerManager.Instance.TurnPlayer.TypeSourceMap.TryGetValue(SourceType.MC, out source))
+            if(PlayerManager.Instance.TurnPlayer.TypeSourceMap.TryGetValue(SourceType.MC, out source) == true)
             {
                 if(source.Amount >= cost)
                 {
@@ -43,7 +43,7 @@ namespace TerraFormmingMars.Logics.Manager
             }
             else
             {
-                Debug.LogError(source.SourceType + "에 해당하는 자원이 없습니다.");
+                Debug.LogError(nameof(CheckCost) + " : " + source.SourceType + "에 해당하는 자원이 없습니다.");
             }
 
             return false;

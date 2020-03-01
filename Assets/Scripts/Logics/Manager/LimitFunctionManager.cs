@@ -10,13 +10,6 @@ namespace TerraFormmingMars.Logics.Manager
 {
     public class LimitFunctionManager : Singleton<LimitFunctionManager>
     {
-        public Entity.Card.CardData cardData;
-
-        private void Start()
-        {
-            CheckLimit(cardData.LimitFunction);
-        }
-
         /// <summary>
         /// FunctionData와 일치하는 조건 검사 함수 실행
         /// </summary>
@@ -31,13 +24,12 @@ namespace TerraFormmingMars.Logics.Manager
             return (bool)functionInfo.Invoke(this, functionData.FunctionArguments.ToArray());
         }
 
-        private bool ProductLimit(params string[] arguments)
+        private bool ProductLimit(string sourceType, string _productLimit)
         {
-            string sourceType = arguments[0];
-            int productLimit = int.Parse(arguments[1]);
+            int productLimit = int.Parse(_productLimit);
 
             Source source;
-            if (PlayerManager.Instance.TurnPlayer.StringSourceMap.TryGetValue(sourceType, out source))
+            if (PlayerManager.Instance.TurnPlayer.StringSourceMap.TryGetValue(sourceType, out source) == true)
             {
                 if (source.Product >= productLimit)
                 {
@@ -46,7 +38,7 @@ namespace TerraFormmingMars.Logics.Manager
             }
             else
             {
-                Debug.LogError(sourceType + "에 해당하는 자원이 없습니다.");
+                Debug.LogError(nameof(ProductLimit) + " : " + sourceType + "에 해당하는 자원이 없습니다.");
             }
 
             return false;

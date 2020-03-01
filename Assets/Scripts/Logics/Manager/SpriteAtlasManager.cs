@@ -24,15 +24,15 @@ namespace TerraFormmingMars.Logics.Manager
         public Sprite GetCardSprite(string imageName)
         {
             Sprite resultSprite = null;
-            if(imageName.Contains("Active"))
+            if(imageName.Contains("Active") == true)
             {
                 resultSprite = ActiveCards.GetSprite(imageName);
             }
-            else if(imageName.Contains("Automated"))
+            else if(imageName.Contains("Automated") == true)
             {
                 resultSprite = AutomatedCards.GetSprite(imageName);
             }
-            else if(imageName.Contains("Event"))
+            else if(imageName.Contains("Event") == true)
             {
                 resultSprite = EventCards.GetSprite(imageName);
             }
