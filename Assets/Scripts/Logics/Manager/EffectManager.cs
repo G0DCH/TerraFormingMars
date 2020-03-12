@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using TerraFormmingMars.Entity;
 using UnityEngine;
 
@@ -6,6 +7,15 @@ namespace TerraFormmingMars.Logics.Manager
 {
     public class EffectManager : Utility.Singleton<EffectManager>
     {
+        public void ExcuteEffect(List<FunctionData> functionDatas)
+        {
+            Player targetPlayer = PlayerManager.Instance.TurnPlayer;
+            foreach(FunctionData functionData in functionDatas)
+            {
+
+            }
+        }
+
         private void ChangeSourceProduct(Player player, params string[] arguments)
         {
             SourceType sourceType = EnumManager.Instance.StringToSourceType(arguments[0]);

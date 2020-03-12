@@ -9,9 +9,9 @@ namespace TerraFormmingMars.Logics.Manager
     public class PlayerManager : Singleton<PlayerManager>
     {
         private Player turnPlayer;
+        /// <summary>
+        /// 현재 턴을 가진 플레이어
+        /// </summary>
         public Player TurnPlayer { private set { turnPlayer = value; } get { return turnPlayer; } }
-
-        private Player targetPlayer;
-        public Player TargetPlayer { set { targetPlayer = value; } get { return targetPlayer; } }
     }
 }

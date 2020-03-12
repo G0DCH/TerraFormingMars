@@ -15,18 +15,27 @@ namespace TerraFormmingMars.Logics.Manager
         /// </summary>
         /// <param name="functionData"></param>
         /// <returns></returns>
-        public bool CheckLimit(FunctionData functionData)
+        public bool CheckLimit(List<FunctionData> functionDatas)
         {
-            Type type = GetType();
-            MethodInfo functionInfo =
-                type.GetMethod(functionData.FunctionName, BindingFlags.Instance | BindingFlags.NonPublic);
+            //최종 검사 결과
+            bool checkResults = false;
+            foreach(FunctionData functionData in functionDatas)
+            {
+                Type type = GetType();
+                MethodInfo functionInfo =
+                    type.GetMethod(functionData.FunctionName, BindingFlags.Instance | BindingFlags.NonPublic);
+                //조건 1개 검사 결과
+                bool checkResult = (bool)functionInfo.Invoke(this, functionData.FunctionArguments.ToArray());
 
-            return (bool)functionInfo.Invoke(this, functionData.FunctionArguments.ToArray());
+                checkResults = checkResults || checkResult;
+            }
+
+            return checkResults;
         }
 
-        private bool ProductLimit(string sourceType, string _productLimit)
+        private bool ProductLimit(string sourceType, string _limitCount)
         {
-            int productLimit = int.Parse(_productLimit);
+            int productLimit = int.Parse(_limitCount);
 
             Source source;
             if (PlayerManager.Instance.TurnPlayer.StringSourceMap.TryGetValue(sourceType, out source) == true)
@@ -42,6 +51,14 @@ namespace TerraFormmingMars.Logics.Manager
             }
 
             return false;
+        }
+
+        private bool TagLimit(string tagType, string _limitCount)
+        {
+            Tag tag = (Tag)EnumManager.Instance.StringToEnumType(tagType);
+            int limitCount = int.Parse(_limitCount);
+
+
         }
     }
 }

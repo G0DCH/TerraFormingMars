@@ -16,12 +16,12 @@ namespace TerraFormmingMars.Logics.Manager
         public void UseCard(CardData cardData)
         {
             //제한 검사
-            if(LimitFunctionManager.Instance.CheckLimit(cardData.LimitFunction) == false)
+            if(LimitFunctionManager.Instance.CheckLimit(cardData.LimitFunctions) == false)
             {
-                //return;
+                return;
             }
             //비용 검사
-            if(CheckCost(cardData) == false)
+            if(CheckCost(cardData.Cost) == false)
             {
                 return;
             }
@@ -29,10 +29,8 @@ namespace TerraFormmingMars.Logics.Manager
             //비용 지불
         }
 
-        private bool CheckCost(CardData cardData)
+        private bool CheckCost(int cost)
         {
-            int cost = cardData.Cost;
-
             Entity.Source source;
             if(PlayerManager.Instance.TurnPlayer.TypeSourceMap.TryGetValue(SourceType.MC, out source) == true)
             {

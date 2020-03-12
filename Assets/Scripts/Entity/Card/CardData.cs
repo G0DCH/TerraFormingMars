@@ -37,7 +37,7 @@ namespace TerraFormmingMars.Entity.Card
         public List<FunctionData> FunctionList { get { return functionList; } }
 
         [SerializeField]
-        private FunctionData limitFunction;
-        public FunctionData LimitFunction { get { return limitFunction; } }
+        private List<FunctionData> limitFunctions;
+        public List<FunctionData> LimitFunctions { get { return limitFunctions; } }
     }
 }
