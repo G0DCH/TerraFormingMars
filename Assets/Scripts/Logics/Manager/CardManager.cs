@@ -25,8 +25,8 @@ namespace TerraFormmingMars.Logics.Manager
             {
                 return;
             }
-            //함수 실행
             //비용 지불
+            //함수 실행
         }
 
         private bool CheckCost(int cost)

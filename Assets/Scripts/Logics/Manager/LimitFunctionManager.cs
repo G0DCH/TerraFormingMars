@@ -58,7 +58,20 @@ namespace TerraFormmingMars.Logics.Manager
             Tag tag = (Tag)EnumManager.Instance.StringToEnumType(tagType);
             int limitCount = int.Parse(_limitCount);
 
+            TagContainer result;
+            if(PlayerManager.Instance.TurnPlayer.TagTagMap.TryGetValue(tag, out result) == true)
+            {
+                if(result.TagCount > limitCount)
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                Debug.LogError(nameof(TagLimit) + " : " + tag + "에 해당하는 태그가 없습니다.");
+            }
 
+            return false;
         }
     }
 }
