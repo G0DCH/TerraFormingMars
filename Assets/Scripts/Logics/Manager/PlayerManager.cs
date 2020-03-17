@@ -13,5 +13,8 @@ namespace TerraFormmingMars.Logics.Manager
         /// 현재 턴을 가진 플레이어
         /// </summary>
         public Player TurnPlayer { private set { turnPlayer = value; } get { return turnPlayer; } }
+
+        private List<Player> playerList = new List<Player>();
+        public List<Player> PlayerList { get { return playerList; } }
     }
 }

@@ -39,5 +39,13 @@ namespace TerraFormmingMars.Entity.Card
         [SerializeField]
         private List<FunctionData> limitFunctions;
         public List<FunctionData> LimitFunctions { get { return limitFunctions; } }
+
+        [SerializeField]
+        private List<FunctionData> targetFunctionList;
+        /// <summary>
+        /// 첫번째는 타겟을 지정하는 함수
+        /// <para>다음부터는 지정한 타겟에게 실행할 함수</para>
+        /// </summary>
+        public List<FunctionData> TargetFunctionList { get { return targetFunctionList; } }
     }
 }
