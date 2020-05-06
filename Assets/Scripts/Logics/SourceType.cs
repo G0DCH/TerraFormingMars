@@ -9,6 +9,7 @@
         Plant,
         Energy,
         Heat,
+        Animal,
         Empty
     }
 }

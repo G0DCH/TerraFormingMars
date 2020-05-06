@@ -35,6 +35,8 @@ namespace TerraFormmingMars.Entity
         private List<Card.Card> automatedCards = new List<Card.Card>();
         private List<Card.Card> eventCards = new List<Card.Card>();
 
+        public string playerName { private set; get; } = string.Empty;
+
         #region 태그
         private TagContainer tag_Building;
         private TagContainer tag_Space;
