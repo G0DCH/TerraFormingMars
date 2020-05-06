@@ -10,6 +10,12 @@ namespace TerraFormmingMars.Logics.Manager
 {
     public class EffectManager : Utility.Singleton<EffectManager>
     {
+        [SerializeField]
+        private GameObject selectWindow;
+
+        [SerializeField]
+        private GameObject selectTarget;
+
 
         public void ExecuteEffect(List<FunctionData> functionDatas)
         {
@@ -47,12 +53,55 @@ namespace TerraFormmingMars.Logics.Manager
             }
         }
 
-        private Player SelectTargetPlayer()
+        //SelectWindow에 들어갈 유저를 조건에 맞게 필터링 후 추가
+        private void FilteringTargetUser(string sourceType, string which)
         {
-            //플레이어 리스트를 보여주고
-            //그 중에서 하나를 선택하게 함
+            foreach (Player player in PlayerManager.Instance.PlayerList)
+            {
+                if (player.StringSourceMap.TryGetValue(sourceType, out Source source) == true)
+                {
 
-            return null;
+                    if (which == "Product")
+                    {
+                        if (source.Product > 0)
+                        {
+                            AddTarget(selectTarget, player, source);
+                        }
+                    }
+                    else if (which == "Amount")
+                    {
+                        if (source.Amount > 0)
+                        {
+                            AddTarget(selectTarget, player, source);
+                        }
+                    }
+                }
+                else
+                {
+                    Debug.LogError(nameof(FilteringTargetUser) + " : " + sourceType + "에 해당하는 자원이 없습니다.");
+                }
+            }
+        }
+
+        private void AddTarget(GameObject target, Player player, Source source)
+        {
+            GameObject addedTarget = Instantiate(selectTarget, selectWindow.transform);
+
+            if (addedTarget == null)
+            {
+                Debug.LogError(nameof(AddTarget) + " : 타겟 추가에 실패했습니다.");
+                return;
+            }
+            else
+            {
+                Toggle toggle = addedTarget.GetComponent<Toggle>();
+                toggle.group = selectWindow.GetComponent<ToggleGroup>();
+
+                string labelName = "Label";
+                Text label = addedTarget.transform.Find(labelName).GetComponent<Text>();
+
+                label.text = string.Format("{0} [{1} {2}(+{3})]", player.playerName, source.SourceType, source.Amount, source.Product);
+            }
         }
     }
 }
