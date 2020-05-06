@@ -16,5 +16,8 @@ namespace TerraFormmingMars.Logics.Manager
 
         private List<Player> playerList = new List<Player>();
         public List<Player> PlayerList { get { return playerList; } }
+
+        private Player targetPlayer = null;
+        public Player TargetPlayer { set { targetPlayer = value; } get { return targetPlayer; } }
     }
 }

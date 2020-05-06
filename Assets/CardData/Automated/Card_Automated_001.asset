@@ -25,10 +25,6 @@ MonoBehaviour:
   - functionName: ChangeSourceProduct
     functionArguments:
     - MC
-    - -2
-  - functionName: ChangeSourceProduct
-    functionArguments:
-    - MC
     - 2
   limitFunctions:
   - functionName: ProductLimit
@@ -39,4 +35,8 @@ MonoBehaviour:
   - functionName: FilteringTargetUser
     functionArguments:
     - MC
-    - product
+    - Product
+  - functionName: ChangeSourceProduct
+    functionArguments:
+    - MC
+    - -2

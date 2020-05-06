@@ -6804,7 +6804,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1758681180}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1819955785}
+        m_MethodName: SetTargetPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1758681180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7115,6 +7126,7 @@ GameObject:
   - component: {fileID: 1819955780}
   - component: {fileID: 1819955779}
   - component: {fileID: 1819955778}
+  - component: {fileID: 1819955785}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -7146,6 +7158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d133a869e0fc049b38e3ae9e107b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectWindow: {fileID: 873431133}
+  selectTarget: {fileID: 8651949011256208985, guid: b55425b89cffbae46a59065c408bb2fb,
+    type: 3}
 --- !u!114 &1819955780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7170,9 +7185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd038d3daf46cdf4e9e1da3230c264dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectWindow: {fileID: 873431133}
-  selectTarget: {fileID: 8651949011256208985, guid: b55425b89cffbae46a59065c408bb2fb,
-    type: 3}
   cardDataList:
   - {fileID: 11400000, guid: 55250b2c1967c8146b77e41892e40b34, type: 2}
 --- !u!114 &1819955782
@@ -7213,6 +7225,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1819955785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819955777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e78334c1f536142bb82b04339d2d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1820284630
 GameObject:
   m_ObjectHideFlags: 0
