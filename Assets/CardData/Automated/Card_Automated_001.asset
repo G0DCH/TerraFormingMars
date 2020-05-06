@@ -35,3 +35,8 @@ MonoBehaviour:
     functionArguments:
     - Energy
     - 1
+  targetFunctionList:
+  - functionName: FilteringTargetUser
+    functionArguments:
+    - MC
+    - product
