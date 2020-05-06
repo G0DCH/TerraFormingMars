@@ -8,12 +8,14 @@ namespace TerraFormmingMars.Logics.Manager
 {
     public class PlayerManager : Singleton<PlayerManager>
     {
+        //[SerializeField]
         private Player turnPlayer;
         /// <summary>
         /// 현재 턴을 가진 플레이어
         /// </summary>
         public Player TurnPlayer { private set { turnPlayer = value; } get { return turnPlayer; } }
 
+        //[SerializeField]
         private List<Player> playerList = new List<Player>();
         public List<Player> PlayerList { get { return playerList; } }
 

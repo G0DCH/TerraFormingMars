@@ -16,27 +16,34 @@ namespace TerraFormmingMars.Logics.Manager
         [SerializeField]
         private GameObject selectTarget;
 
+        //Effect, TargetEffect 통합 실행
+        public void ExecuteCard(List<FunctionData> functionDatas, List<FunctionData> targetFunctionDatas)
+        {
+            // 타깃 지정이 있다면 일반 효과는 지정 할 때 까지 대기
+            if (targetFunctionDatas.Count > 0)
+            {
+                ExecuteTargetEffect(targetFunctionDatas);
+                StartCoroutine(Execute_Effect(functionDatas, true));
+            }
+            // 아니라면 그냥 실행
+            else
+            {
+                ExecuteEffect(functionDatas);
+            }
+        }
+
         public void ExecuteEffect(List<FunctionData> functionDatas)
         {
-            List<object> arguments = new List<object>();
-            foreach (FunctionData functionData in functionDatas)
-            {
-                arguments.Clear();
-                arguments.AddRange(functionData.FunctionArguments);
-
-                Type type = GetType();
-                MethodInfo functionInfo =
-                    type.GetMethod(functionData.FunctionName, BindingFlags.Instance | BindingFlags.NonPublic);
-                functionInfo.Invoke(this, arguments.ToArray());
-            }
+            StartCoroutine(Execute_Effect(functionDatas));
         }
 
         public void ExecuteTargetEffect(List<FunctionData> functionDatas)
         {
             List<object> arguments = new List<object>();
 
-            FunctionData targetFunction = functionDatas[0];
-            functionDatas.RemoveAt(0);
+            List <FunctionData> tmpList = new List<FunctionData>(functionDatas);
+            FunctionData targetFunction = tmpList[0];
+            tmpList.RemoveAt(0);
 
             arguments.Clear();
             arguments.AddRange(targetFunction.FunctionArguments);
@@ -47,8 +54,7 @@ namespace TerraFormmingMars.Logics.Manager
             functionInfo.Invoke(this, arguments.ToArray());
 
             PlayerManager.Instance.TargetPlayer = null;
-
-            StartCoroutine(ExcuteTargetEffect(functionDatas));
+            StartCoroutine(Execute_TargetEffect(tmpList));
         }
 
         private void ChangeSourceProduct(string sourceType, string _sourceDifference, Player player = null)
@@ -121,6 +127,8 @@ namespace TerraFormmingMars.Logics.Manager
                     Debug.LogError(nameof(FilteringTargetUser) + " : " + sourceType + "에 해당하는 자원이 없습니다.");
                 }
             }
+
+            selectWindow.SetActive(true);
         }
 
         private void AddTarget(GameObject target, Player player, Source source)
@@ -146,9 +154,9 @@ namespace TerraFormmingMars.Logics.Manager
             }
         }
 
-        private IEnumerator ExcuteTargetEffect(List<FunctionData> functionDatas)
+        private IEnumerator Execute_TargetEffect(List<FunctionData> functionDatas)
         {
-            while(PlayerManager.Instance.TargetPlayer == null)
+            while (PlayerManager.Instance.TargetPlayer == null)
             {
                 yield return new WaitForEndOfFrame();
             }
@@ -167,7 +175,29 @@ namespace TerraFormmingMars.Logics.Manager
                 functionInfo.Invoke(this, arguments.ToArray());
             }
 
-            PlayerManager.Instance.TargetPlayer = null;
+            yield break;
+        }
+
+        private IEnumerator Execute_Effect(List<FunctionData> functionDatas, bool isWaiting = false)
+        {
+            // 타깃 선택 때문에 기다려야 한다면 대기
+            while (isWaiting == true && PlayerManager.Instance.TargetPlayer == null)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+
+            List<object> arguments = new List<object>();
+            foreach (FunctionData functionData in functionDatas)
+            {
+                arguments.Clear();
+                arguments.AddRange(functionData.FunctionArguments);
+                arguments.Add(PlayerManager.Instance.TurnPlayer);
+
+                Type type = GetType();
+                MethodInfo functionInfo =
+                    type.GetMethod(functionData.FunctionName, BindingFlags.Instance | BindingFlags.NonPublic);
+                functionInfo.Invoke(this, arguments.ToArray());
+            }
 
             yield break;
         }

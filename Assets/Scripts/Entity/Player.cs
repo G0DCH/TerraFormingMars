@@ -56,6 +56,8 @@ namespace TerraFormmingMars.Entity
 
         private int terraformmingLevel = 20;
 
+        //public Card.CardData cardData;
+
         private void Start()
         {
             InitSource();
@@ -65,6 +67,15 @@ namespace TerraFormmingMars.Entity
             InitTagContainer();
             InitStringTagMap();
             InitTagTagMap();
+
+            // 테스트용 코드
+            //MC.Amount += 1000;
+            //MC.Product += 1000;
+            //Energy.Product += 1000;
+
+            //playerName = "1234";
+
+            //CardManager.Instance.UseCard(cardData);
         }
 
         //자원 초기화

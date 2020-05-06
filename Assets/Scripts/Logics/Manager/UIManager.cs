@@ -18,9 +18,15 @@ namespace TerraFormmingMars.Logics.Manager
             }
         }
 
-        public void SetTargetPlayer()
+        public void SetTargetPlayer(GameObject selectWindow)
         {
+            if(TmpSelectedPlayer == null)
+            {
+                Debug.LogError("선택 안됨");
+                return;
+            }
             PlayerManager.Instance.TargetPlayer = TmpSelectedPlayer;
+            selectWindow.SetActive(false);
         }
     }
 }
